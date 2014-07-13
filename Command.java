@@ -124,6 +124,11 @@ public class Command {
     public final static String  RECEIVEFILE = "receiveFile"; 
     // 客户端(接收方) --> 客户端(接收方)	拒绝接收文件
     public final static String  REFUSETORECEIVEFILE = "refuseToReceiveFile";   
+    
+    /***
+     * command about heart beat
+     */
+    public final static String HEARTBEAT = "heartBeat";
 }
 
 
