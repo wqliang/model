@@ -50,6 +50,8 @@ public class Command {
 	 */
     // 客户端 --> 服务端	添加好友
     public final static String ADDFRIEND = "addFriend";
+    // 客户端 --> 服务端	删除好友
+    public final static String DELETEFRIEND = "deleteFriend";
     // 服务端 --> 客户端(请求方)	等待被请求方处理添加请求
     public final static String WAITFORUSERRESPOND = "waitForUserRespond";
     // 服务端 --> 客户端(请求方)	获得被请求方处理结果
