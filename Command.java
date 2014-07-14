@@ -44,6 +44,8 @@ public class Command {
     // 服务端 --> 客户端	获得查询用户信息信令
     public final static String GAINUSERINFO = "gainUserInfo";
     
+    public final static String FINDUSERFAIL = "findUserFail";
+    
     
 	/***
 	 * 与添加好友有关的信令

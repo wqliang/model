@@ -24,4 +24,8 @@ public class FindUserContainer implements Serializable {
 	public void setUser(User u){
 		user = u;
 	}
+	
+	public int getUserId(){
+		return user.getUid();
+	}
 }
