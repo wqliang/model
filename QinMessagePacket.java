@@ -24,6 +24,8 @@ public class QinMessagePacket implements Serializable {
 	private FindUserContainer findUserContainer = null;
 	
 	private HeartBeatContainer heartBeatContainer = null;
+	private AddFriendContainer addFriendContainer = null;
+	private DeleteFriendContainer deleteFriendContainer = null;
 	//private MakeFriendContainer makeFriendContainer = null;
 	
 	//private CreateGroupContainer createGroupContainer = null;
@@ -139,6 +141,22 @@ public class QinMessagePacket implements Serializable {
 	
 	public HeartBeatContainer getHeartBeatContainer() {
 		return heartBeatContainer;
+	}
+	
+	public void setAddFriendContainer(AddFriendContainer afc) {
+		addFriendContainer = afc;
+	}
+	
+	public AddFriendContainer getAddFriendContainer() {
+		return addFriendContainer;
+	}
+	
+	public void setDeleteFriendContainer(DeleteFriendContainer dfc) {
+		deleteFriendContainer = dfc;
+	}
+	
+	public DeleteFriendContainer getDeleteFriendContainer() {
+		return deleteFriendContainer;
 	}
 	
 	/***
