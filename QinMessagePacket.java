@@ -28,8 +28,9 @@ public class QinMessagePacket implements Serializable {
 	private DeleteFriendContainer deleteFriendContainer = null;
 	//private MakeFriendContainer makeFriendContainer = null;
 	
+	private FindQunContainer findQunContainer = null;
+	
 	//private CreateGroupContainer createGroupContainer = null;
-	//private FindGroupContainer findGroupContainer = null;
 	//private JoinInGroupContainer joinInGroupContainer = null;
 	
 	//private ChangeGroupInfoContainer  changeGroupInfoContainer = null;
@@ -157,6 +158,14 @@ public class QinMessagePacket implements Serializable {
 	
 	public DeleteFriendContainer getDeleteFriendContainer() {
 		return deleteFriendContainer;
+	}
+	
+	public void setFindQunContainer(FindQunContainer fqc) {
+		findQunContainer = fqc;
+	}
+	
+	public FindQunContainer getFindQunContainer() {
+		return findQunContainer;
 	}
 	
 	/***

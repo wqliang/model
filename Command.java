@@ -68,33 +68,33 @@ public class Command {
 	 * 与创建群有关的信令
 	 */
     // 客户端 --> 服务端	发送创建群请求
-    public final static String CREATEGROUP = "createGroup";
+    public final static String CREATEQUN = "createQun";
     // 服务端 --> 客户端	成功创建群
-    public final static String CREATEGROUPSUCCESS = "createGroupSuccess";
+    public final static String CREATEQUNSUCCESS = "createQunSuccess";
     
     
 	/***
 	 * 与查找群有关的信令
 	 */
     // 客户端 --> 服务端	查找群
-    public final static String FINDGROUP = "findGroup";
+    public final static String FINDQUN = "findQun";
     // 服务端 --> 客户端	获得群息
-    public final static String GAINGROUPINFO = "gainGroupInfo";
+    public final static String GAINQUNINFO = "gainQunInfo";
     
     
 	/***
 	 * 与加入群有关的信令
 	 */
     // 客户端 --> 服务端	申请加入群
-    public final static String JOININGROUP = "joinInGroup";
+    public final static String JOININQUN = "joinInQun";
     // 服务端 --> 客户端(请求方)	等待群(主)处理添加请求
-    public final static String WAITFORGROUPRESPOND = "waitForGroupRespond";
+    public final static String WAITFORQUNRESPOND = "waitForQunRespond";
     // 服务端 --> 客户端(请求方)	获得群(主)处理结果
-    public final static String GAINGROUPRESPOND = "gainGroupRespond";
+    public final static String GAINQUNRESPOND = "gainQunRespond";
     // 服务端 --> 客户端(群主)	收到加入群请求
-    public final static String RECEIVEJIONINGROUPAPPLICATION = "receiveJoinInGroupApplication";
+    public final static String RECEIVEJIONINQUNAPPLICATION = "receiveJoinInQunApplication";
     // 服务端(群主) --> 服务端	处理加入群请求
-    public final static String RESPONDJIONINGROUPAPPLICATION = "respondJoinInGroupApplication";
+    public final static String RESPONDJIONINQUNAPPLICATION = "respondJoinInQunApplication";
     
     
     /***
@@ -103,7 +103,7 @@ public class Command {
     // 客户端 --> 服务端	修改个人消息
     public final static String CHANGEUSERINFO = "changeUserInfo";
     // 服务端 --> 客户端	修改群消息
-    public final static String CHANGEGROUPINFO = "changeGroupInfo";
+    public final static String CHANGEQUNINFO = "changeQunInfo";
     
     
 	/***
@@ -114,9 +114,9 @@ public class Command {
     // 服务端 --> 客户端(接收方)	接收私聊信息
     public final static String RECEIVEPRIVATEMSG = "receivePrivateMsg";
     // 客户端(发送方) --> 服务端	发送群聊信息
-    public final static String SENDGROUPMSG = "sendGroupMsg";
+    public final static String SENDQUNMSG = "sendQunMsg";
     // 服务端 --> 客户端(接收方) 	接群私聊信息
-    public final static String RECEIVEGROUPMSG = "receiveGroupMsg";
+    public final static String RECEIVEQUNMSG = "receiveQunMsg";
     
     
 	/***
