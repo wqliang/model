@@ -96,6 +96,12 @@ public class Command {
     // 服务端(群主) --> 服务端	处理加入群请求
     public final static String RESPONDJIONINQUNAPPLICATION = "respondJoinInQunApplication";
     
+    /***
+     * 与退出群有关的命令
+     */
+    // 客户端 --> 服务端	申请退出群
+    public final static String EXITQUN = "exitQun";
+    
     
     /***
      * 与修改个人消息、群消息有关的信令

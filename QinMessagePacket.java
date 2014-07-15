@@ -29,9 +29,10 @@ public class QinMessagePacket implements Serializable {
 	//private MakeFriendContainer makeFriendContainer = null;
 	
 	private FindQunContainer findQunContainer = null;
+	private CreateQunContainer createQunContainer = null;
 	
-	//private CreateGroupContainer createGroupContainer = null;
-	//private JoinInGroupContainer joinInGroupContainer = null;
+	private JoinQunContainer joinQunContainer = null;
+	private ExitQunContainer exitQunContainer = null;
 	
 	//private ChangeGroupInfoContainer  changeGroupInfoContainer = null;
 	//private ChangeUserInfoContainer	changeUserInfoContainer  = null;
@@ -166,6 +167,30 @@ public class QinMessagePacket implements Serializable {
 	
 	public FindQunContainer getFindQunContainer() {
 		return findQunContainer;
+	}
+	
+	public void setCreateQunContainer(CreateQunContainer cqc) {
+		createQunContainer = cqc;
+	}
+	
+	public CreateQunContainer getCreateQunContainer() {
+		return createQunContainer;
+	}
+	
+	public void setJoinQunContainer(JoinQunContainer jqc) {
+		joinQunContainer = jqc;
+	}
+	
+	public JoinQunContainer getJoinQunContainer() {
+		return joinQunContainer;
+	}
+	
+	public void setExitQunContainer(ExitQunContainer eqc) {
+		exitQunContainer = eqc;
+	}
+	
+	public ExitQunContainer getExitQunContainer() {
+		return exitQunContainer;
 	}
 	
 	/***
