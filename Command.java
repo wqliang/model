@@ -83,6 +83,8 @@ public class Command {
     // 服务端 --> 客户端	获得群息
     public final static String GAINQUNINFO = "gainQunInfo";
     
+    public final static String FINDQUNFAIL = "findQunFail";
+    
     
 	/***
 	 * 与加入群有关的信令
