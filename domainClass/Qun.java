@@ -1,8 +1,6 @@
 package qin.model.domainClass;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Qun implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -13,14 +11,11 @@ public class Qun implements Serializable{
 	private String qunName;
 	private String qunDescription;
 	
-	private List<User> qunMember;
-	
 	public Qun() {
 		qunID = 0;
 		qunOwnerID = 0;
 		qunName = "";
 		qunDescription = "";
-		qunMember = new ArrayList<User>();
 	}
 	
 	
@@ -29,7 +24,6 @@ public class Qun implements Serializable{
 		qunOwnerID = 0;
 		qunDescription = "";
 		qunName = "";
-		qunMember = new ArrayList<User>();
 	}
 	
 	
@@ -69,15 +63,5 @@ public class Qun implements Serializable{
 	
 	public String getQunDescription() {
 		return qunDescription;
-	}
-	
-	
-	public void setQunMember(List<User> _qunMember) {
-		qunMember = _qunMember;
-	}
-	
-	
-	public List<User> getQunMember() {
-		return qunMember;
 	}
 }
