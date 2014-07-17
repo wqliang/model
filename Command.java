@@ -72,6 +72,8 @@ public class Command {
     // 服务端 --> 客户端	成功创建群
     public final static String CREATEQUNSUCCESS = "createQunSuccess";
     
+    public final static String CREATEQUNFAIL = "createQunFail";
+    
     
 	/***
 	 * 与查找群有关的信令
