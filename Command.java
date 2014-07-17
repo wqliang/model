@@ -107,9 +107,9 @@ public class Command {
      * 与修改个人消息、群消息有关的信令
      */
     // 客户端 --> 服务端	修改个人消息
-    public final static String CHANGEUSERINFO = "changeUserInfo";
+    public final static String MODIFYUSERINFO = "modifyUserInfo";
     // 服务端 --> 客户端	修改群消息
-    public final static String CHANGEQUNINFO = "changeQunInfo";
+    public final static String MODIFYQUNINFO = "modifyQunInfo";
     
     
 	/***

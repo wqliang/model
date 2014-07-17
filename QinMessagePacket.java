@@ -26,7 +26,6 @@ public class QinMessagePacket implements Serializable {
 	private HeartBeatContainer heartBeatContainer = null;
 	private AddFriendContainer addFriendContainer = null;
 	private DeleteFriendContainer deleteFriendContainer = null;
-	//private MakeFriendContainer makeFriendContainer = null;
 	
 	private FindQunContainer findQunContainer = null;
 	private CreateQunContainer createQunContainer = null;
@@ -34,12 +33,8 @@ public class QinMessagePacket implements Serializable {
 	private JoinQunContainer joinQunContainer = null;
 	private ExitQunContainer exitQunContainer = null;
 	
-	//private ChangeGroupInfoContainer  changeGroupInfoContainer = null;
-	//private ChangeUserInfoContainer	changeUserInfoContainer  = null;
-	
-	//private ChatContainer chatContainer = null;
-	
-	
+	private ModifyUserInfoContainer modifyUserInfoContainer = null;
+	private ModifyQunInfoContainer modifyQunInfoContainer = null;	
 	
 	public QinMessagePacket(String _command) {
 		command = _command;
@@ -193,111 +188,20 @@ public class QinMessagePacket implements Serializable {
 		return exitQunContainer;
 	}
 	
-	/***
-	 * �� ע�� �йص�set��get����
-	 * @return
-	 *//*
-	public LogoutContainer getLogoutContainer() {
-		return logoutSeqment;
+	public ModifyUserInfoContainer getModifyUserInfoContainer() {
+		return modifyUserInfoContainer;
 	}
-	public void setLogoutContainer(LogoutContainer _logoutContainer) {
-		logoutSeqment = _logoutContainer;
-	}
-*/
 	
-	/***
-	 * �� ��ѯ�û���Ϣ �йص�set��get����
-	 * @return
-	 *//*
-	public FindUserContainer getFindUserContainer() {
-		return findUserContainer;
+	public void setModifyUserInfoContainer(ModifyUserInfoContainer muic) {
+		modifyUserInfoContainer = muic;
 	}
-	public void setFindUserContainer(FindUserContainer _findUserContainer) {
-		findUserContainer = _findUserContainer;
-	}
-	*/
 	
-	/***
-	 * �� ��Ӻ��� �йص�set��get����
-	 * @return
-	 *//*
-	public MakeFriendContainer getMakeFriendContainer() {
-		return  makeFriendContainer;
+	public ModifyQunInfoContainer getModifyQunInfoContainer() {
+		return modifyQunInfoContainer;
 	}
-	public void setMakeFriendContainer(MakeFriendContainer _makeFriendContainer) {
-		makeFriendContainer = _makeFriendContainer;
-	}
-	*/
 	
-	/***
-	 * �� ����Ⱥ �йص�set��get����
-	 * @return
-	 *//*
-	public CreateGroupContainer getCreateGroupContainer() {
-		return createGroupContainer;
+	public void setModifyQunInfoContainer(ModifyQunInfoContainer mqic) {
+		modifyQunInfoContainer = mqic;
 	}
-	public void setCreateGroupContainer(CreateGroupContainer _createGroupContainer) {
-		createGroupContainer = _createGroupContainer;
-	}
-	*/
-	
-	/***
-	 * �� ��ѯȺ �йص�set��get����
-	 * @return
-	 *//*
-	public FindGroupContainer getFindGroupContainer() {
-		return findGroupContainer;
-	}
-	public void setFindGroupContainer(FindGroupContainer _findGroupContainer) {
-		findGroupContainer = _findGroupContainer;
-	}
-	*/
-	
-	/***
-	 * �� ����Ⱥ �йص�set��get����
-	 * @return
-	 *//*
-	public JoinInGroupContainer  getJoinInGroupContainer() {
-		return joinInGroupContainer;
-	}
-	public void setJoinInGroupContainer(JoinInGroupContainer _joinInGroupContainer) {
-		joinInGroupContainer = _joinInGroupContainer;
-	}
-	*/
-	
-	/***
-	 * �� ���Ⱥ���� �йص�set��get����
-	 * @return
-	 *//*
-	public ChangeGroupInfoContainer getChangeGroupInfoContainer() {
-		return changeGroupInfoContainer;
-	}
-	public void setChangeGroupInfoContainer(ChangeGroupInfoContainer _changeGroupInfoContainer) {
-		changeGroupInfoContainer = _changeGroupInfoContainer;
-	}
-	*/
-	
-	/***
-	 * �� ����û���Ϣ �йص�set��get����
-	 * @return
-	 *//*
-	public ChangeUserInfoContainer getChangeUserInfoContainer() {
-		return changeUserInfoContainer;
-	}
-	public void setChangeUserInfoContainer(ChangeUserInfoContainer _changeUserInfoContainer) {
-		changeUserInfoContainer = _changeUserInfoContainer ;
-	}
-	*/
-	/***
-	 * �� ���� �йص�set��get����
-	 * @return
-	 *//*
-	public ChatContainer getChatContainer() {
-		return chatContainer;
-	}
-	public void setChatContainer(ChatContainer _chatContainer) {
-		chatContainer = _chatContainer;
-	}
-	*/
 }
 
