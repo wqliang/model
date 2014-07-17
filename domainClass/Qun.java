@@ -28,7 +28,7 @@ public class Qun implements Serializable{
 	
 	
 	public void setQunOwnerID(int _qunOwnerID) {
-		qunID = _qunOwnerID;
+		qunOwnerID = _qunOwnerID;
 	}
 	
 	
