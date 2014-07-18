@@ -2,32 +2,26 @@ package qin.model.domainClass;
 
 import java.io.Serializable;
 
+//import Model.BaseClass.Address;
+
 public class User implements Serializable {
-	
 	private static final long serialVersionUID = 1L;
 	
-	private int ID = 0;
-	private String nickname = null;
+	private int uid = 0;
+	private String nickName = null;
 	private String password = null;
-	
 	private String email = "";
-	
 	private int age = 0;
-	
 	private String gender = "";
-
 	private Address address = new Address();
-	
 	private String headImage = "1.png";
-	
-	private String IP = null;
+	private String IPAddr = null;
 	private int port = 0;
-	
 	private boolean isOnline = false;
 	
 	public User() {
-		ID = 0;
-		nickname = "";
+		uid = 0;
+		nickName = "";
 	}
 	
 	/***
@@ -38,17 +32,17 @@ public class User implements Serializable {
 	 */
 	public User(int _ID, String _nickname, String _password) {
 		
-		ID = _ID;
-		nickname = _nickname;
+		uid = _ID;
+		nickName = _nickname;
 		password = _password;
 	}
 	
-	public void setID(int _ID) {
-		ID = _ID;
+	public void setUid(int _ID) {
+		uid = _ID;
 	}
 	
-	public void  setNickname(String _nickname) {
-		nickname = _nickname;
+	public void  setNickName(String _nickname) {
+		nickName = _nickname;
 	}
 	
 	public void  setPassword(String _password) {
@@ -75,20 +69,20 @@ public class User implements Serializable {
 		headImage =  _headImage;
 	}
 	
-	public void  setIP(String _IP) {
-		IP = _IP;
+	public void  setIPAddr(String _IP) {
+		IPAddr = _IP;
 	}
 	
 	public void setPort(int _port) {
 		port = _port;
 	}
 	
-	public int getID() {
-		return ID;
+	public int getUid() {
+		return uid;
 	}
 	
-	public String getNickname() {
-		return nickname;
+	public String getNickName() {
+		return nickName;
 	}
 	
 	public String getPassword() {
@@ -115,8 +109,8 @@ public class User implements Serializable {
 		return headImage;
 	}
 	
-	public String getIP() {
-		return IP;
+	public String getIPAddr() {
+		return IPAddr;
 	}
 	
 	public int getPort() {
@@ -132,7 +126,7 @@ public class User implements Serializable {
 	}
 	
 	public void offline() {
-		isOnline = false;
+		isOnline = true;
 	}
 
 }
