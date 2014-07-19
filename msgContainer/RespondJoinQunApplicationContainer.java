@@ -2,14 +2,16 @@ package qin.model.msgContainer;
 
 import java.io.Serializable;
 
-public class JoinQunContainer implements Serializable {
+public class RespondJoinQunApplicationContainer implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private int userId, qunId;
+	private boolean ifAgree;
 		
-	public JoinQunContainer(int _userId, int _qunId){
+	public RespondJoinQunApplicationContainer(int _userId, int _qunId, boolean _ifAgree){
 		userId = _userId;
 		qunId = _qunId;
+		ifAgree = _ifAgree;
 	}
 	
 	public int getUserId() {
@@ -20,11 +22,19 @@ public class JoinQunContainer implements Serializable {
 		return qunId;
 	}
 	
+	public boolean getIfAgree() {
+		return ifAgree;
+	}
+	
 	public void setUserId(int _userId) {
 		userId = _userId;
 	}
 	
 	public void setQunId(int _qunId) {
 		qunId = _qunId;
+	}
+	
+	public void setIfAgree(boolean _ifAgree) {
+		ifAgree = _ifAgree;
 	}
 }

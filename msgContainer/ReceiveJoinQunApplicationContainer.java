@@ -2,12 +2,12 @@ package qin.model.msgContainer;
 
 import java.io.Serializable;
 
-public class JoinQunContainer implements Serializable {
+public class ReceiveJoinQunApplicationContainer implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private int userId, qunId;
 		
-	public JoinQunContainer(int _userId, int _qunId){
+	public ReceiveJoinQunApplicationContainer(int _userId, int _qunId){
 		userId = _userId;
 		qunId = _qunId;
 	}

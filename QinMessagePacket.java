@@ -36,6 +36,14 @@ public class QinMessagePacket implements Serializable {
 	private ModifyUserInfoContainer modifyUserInfoContainer = null;
 	private ModifyQunInfoContainer modifyQunInfoContainer = null;	
 	
+	private SendFileSegment sendFileSegment = null;
+
+	private ReceiveAddFriendApplicationContainer receiveAddFriendApplicationContainer = null;
+	private RespondAddFriendApplicationContainer respondAddFriendApplicationContainer = null;
+	
+	private ReceiveJoinQunApplicationContainer receiveJoinQunApplicationContainer = null;
+	private RespondJoinQunApplicationContainer respondJoinQunApplicationContainer = null;
+	
 	public QinMessagePacket(String _command) {
 		command = _command;
 	}
@@ -202,6 +210,46 @@ public class QinMessagePacket implements Serializable {
 	
 	public void setModifyQunInfoContainer(ModifyQunInfoContainer mqic) {
 		modifyQunInfoContainer = mqic;
+	}
+	
+	public SendFileSegment getSendFileSegment() {
+		return sendFileSegment;
+	}
+	
+	public void setSendFileSegment(SendFileSegment _sendFileSegment) {
+		sendFileSegment =  _sendFileSegment;
+	}
+	
+	public void setReceiveAddFriendApplicationContainer(ReceiveAddFriendApplicationContainer rafac) {
+		receiveAddFriendApplicationContainer = rafac;
+	}
+	
+	public ReceiveAddFriendApplicationContainer getReceiveAddFriendApplicationContainer() {
+		return receiveAddFriendApplicationContainer;
+	}
+	
+	public void setRespondAddFriendApplicationContainer(RespondAddFriendApplicationContainer rafac) {
+		respondAddFriendApplicationContainer = rafac;
+	}
+	
+	public RespondAddFriendApplicationContainer getRespondAddFriendApplicationContainer() {
+		return respondAddFriendApplicationContainer;
+	}
+	
+	public void setReceiveJoinQunApplicationContainer(ReceiveJoinQunApplicationContainer rjqac) {
+		receiveJoinQunApplicationContainer = rjqac;
+	}
+	
+	public ReceiveJoinQunApplicationContainer getReceiveJoinQunApplicationContainer() {
+		return receiveJoinQunApplicationContainer;
+	}
+	
+	public void setRespondJoinQunApplicationContainer(RespondJoinQunApplicationContainer rjqac) {
+		respondJoinQunApplicationContainer = rjqac;
+	}
+	
+	public RespondJoinQunApplicationContainer getRespondJoinQunApplicationContainer() {
+		return respondJoinQunApplicationContainer;
 	}
 }
 

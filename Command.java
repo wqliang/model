@@ -57,11 +57,11 @@ public class Command {
     // 服务端 --> 客户端(请求方)	等待被请求方处理添加请求
     public final static String WAITFORUSERRESPOND = "waitForUserRespond";
     // 服务端 --> 客户端(请求方)	获得被请求方处理结果
-    public final static String GAINMAKEFRIENDRESPOND = "gainMakeFriendRespond";
+    public final static String GAINADDFRIENDRESPOND = "gainAddFriendRespond";
     // 服务端 --> 客户端(被请求方)	收到添加好友请求
-    public final static String RECEIVEMAKEFRIENDAPPLICATION = "receiveMakeFriendApplication";
+    public final static String RECEIVEADDFRIENDAPPLICATION = "receiveAddFriendApplication";
     // 服务端(被请求方) --> 服务端	处理添加好友请求
-    public final static String RESPONDMAKEFRIENDAPPLICATION = "respondMakeFriendApplication";
+    public final static String RESPONDADDFRIENDAPPLICATION = "respondAddFriendApplication";
  
     
 	/***
@@ -96,9 +96,9 @@ public class Command {
     // 服务端 --> 客户端(请求方)	获得群(主)处理结果
     public final static String GAINQUNRESPOND = "gainQunRespond";
     // 服务端 --> 客户端(群主)	收到加入群请求
-    public final static String RECEIVEJIONINQUNAPPLICATION = "receiveJoinInQunApplication";
+    public final static String RECEIVEJOINQUNAPPLICATION = "receiveJoinQunApplication";
     // 服务端(群主) --> 服务端	处理加入群请求
-    public final static String RESPONDJIONINQUNAPPLICATION = "respondJoinInQunApplication";
+    public final static String RESPONDJOINQUNAPPLICATION = "respondJoinQunApplication";
     
     /***
      * 与退出群有关的命令

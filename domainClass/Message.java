@@ -27,6 +27,13 @@ public class Message implements Serializable {
 		dateTime = msg.getDateTime();
 	}
 	
+	public Message(int s, int d, String _message, String _time) {
+		sourceId = s;
+		destinationId = d;
+		detail = _message;
+		dateTime = _time;
+	}
+	
 	public int getSourceId(){
 		return sourceId;
 	}

@@ -2,20 +2,25 @@ package qin.model;
 
 public class Resource {
 
-	public final static String LogoPath = "/picture/logo@150.png";
+	public final static String LogoPath = "/qin/picture/logo@150.png";
 	
-	public final static String OnLineHeadImagePath = "/picture/HeadImage/online/";
+	public final static String OnLineHeadImagePath = "/qin/picture/HeadImage/online/";
 	
-	public final static String OffLineHeadImagePath = "/picture/HeadImage/offline/";
+	public final static String OffLineHeadImagePath = "/qin/picture/HeadImage/offline/";
 	
 	public final static String[] HeadImageFiles = {"1.png", "2.png", "3.png", "4.png", "5.png", "6.png"};
 	
-	public final static String GroupLogo = "/picture/GroupLogo.png";
+	public final static String QunLogo = "/qin/picture/QunLogo.png";
 	
-	public final static String SendFilePicture = "/picture/SendFilePicture.png";
+	public final static String SendFilePicture = "/qin/picture/SendFilePicture.png";
 	
-	public final static String SettingPicture = "/picture/SettingPicture.png";
+	public final static String SettingPicture = "/qin/picture/SettingPicture.png";
 	
+	public final static String SearchPicture = "/qin/picture/SearchPicture.png";
+	
+	public final static String CreateQunPicture = "/qin/picture/CreateQunPicture.png";
+	
+	public final static String NotifyPicture = "/qin/picture/msg.png";
 	
 	public final static int HeadImaageWidth = 40;
 	
@@ -25,6 +30,9 @@ public class Resource {
 	
 	public final static int MainUIHeight = 600;
 	
+	public final static int SearchUIWidth = 400;
+	
+	public final static int SearchUIHeight = 280;
 	
 	public final static int MessageUIWidth = 400;
 	
@@ -36,7 +44,10 @@ public class Resource {
 	 
 	public final static int ServerPort = 6687;
 	
+	public final static String ClientIP = "127.0.0.1";
 	
-	public final static int NotUserTreeNodeSign = 0;
+	public final static int ClientPort = 9123;
+	
+	public final static int NotTreeNodeSign = 0;
    
 }
